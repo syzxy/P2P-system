@@ -9,16 +9,18 @@ A [peer-to-peer file sharing](https://en.wikipedia.org/wiki/Peer-to-peer_file_sh
 </ol>
 
 ## Usage
+Clone the repo or down load a zip file.
 ### 1. Initialize the network
 On a linux terminal (requires Python3 and [X server](https://en.wikipedia.org/wiki/X_Window_System)):
 ```
+cd src
 chmod 755 Dht.py init.sh
 ./init.sh
 ```
 This will start a network with 7 peers as depicted below. The number aside each node is it's ID, a valid ID is an integer in the range [0, 255]. 
 The two outgoing arrows from a node indicate it's successors in the network. The peers start pinging its successors immediately upon initialization, see [report.pdf - 2.2 Ping Successors](./report.pdf) for details on how peers ping through UDP connetction and detect the status of its successors.
 
-![alt text](Dht.svg "An image of a Chord DHT consisting 7 nodes")
+![alt text](./src/Dht.svg "An image of a Chord DHT consisting 7 nodes")
 
 ### 2. Peer Joining
 After being initialized, new peers can join the P2P network via any existing peer by executing the following command:
