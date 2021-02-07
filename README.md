@@ -9,7 +9,7 @@ A [peer-to-peer file sharing](https://en.wikipedia.org/wiki/Peer-to-peer_file_sh
 </ol>
 
 ## Usage
-Clone the repo or down load a zip file.
+Clone the repo or download a zip file.
 ### 1. Initialize the network
 On a linux terminal (requires Python3 and [X server](https://en.wikipedia.org/wiki/X_Window_System)):
 ```
